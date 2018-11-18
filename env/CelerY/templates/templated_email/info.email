@@ -1,0 +1,34 @@
+{% block html %}
+<p style="font-size:40px;color:green">
+  Please find the below mentioned information<br>
+  <span style="font-size:20px;color:red">
+    Please visit this website to know about email templating<br>
+    <span style="color:blue">
+      https://github.com/vintasoftware/django-templated-email
+    </span>
+  </span>
+</p>
+<center>
+<div>
+<table style="border-collapse:collapse">
+  <tr>
+    <th style="border:1px solid black;padding:10px">
+      USERNAME
+    </th>
+    <th style="border:1px solid black;padding:10px">
+      ORGANISATION
+    </th>
+  </tr>
+  <tr>
+    <th style="border:1px solid black;padding:10px">
+      {{ info_u }}
+    </th>
+    <th style="border:1px solid black;padding:10px">
+      {{ info_org }}
+    </th>
+  </tr>
+</table>
+</div>
+</center>
+
+{% endblock %}
